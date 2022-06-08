@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DadosUsuarioActivity">
+
+    <TextView
+        android:id="@+id/tvNomedoUsuarioLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seu nome é:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvNomedoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvNomedoUsuarioLabel"
+        app:layout_constraintTop_toTopOf="@id/tvNomedoUsuarioLabel" />
+
+    <TextView
+        android:id="@+id/tvIdadeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sua idade é:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNomedoUsuarioLabel" />
+
+    <TextView
+        android:id="@+id/tvIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvIdadeLabel"
+        app:layout_constraintTop_toTopOf="@id/tvIdadeLabel" />
+
+    <TextView
+        android:id="@+id/tvResultadoIdadeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvIdadeLabel" />
+
+    <TextView
+        android:id="@+id/tvResultadoIdade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvIdadeLabel"
+        app:layout_constraintTop_toTopOf="@id/tvIdadeLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
